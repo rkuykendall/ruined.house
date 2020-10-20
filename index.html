@@ -10,20 +10,43 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     </head>
     <style>
+        html {
+           height: 100%;
+        }
+
+        body {
+           min-height: 100%;
+        }
+
         html, body {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
 
         body {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
             background-color: #acabb0;
             font-family: "Crimson Text", serif;
         }
 
         #content {
-            padding: 5%;
             font-size: 24px;
+
+            background-image: url('background1.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            min-height: calc(43vw);
+            padding: 5% 5% 0 5%;
+            width: 90%;
+        }
+
+        #content p:last-child {
+            margin-bottom: 0;
+            padding-bottom: 30px;
         }
 
         #poem {
@@ -32,11 +55,12 @@
 
         cite {
             font-size: 16px;
-            color: #666;
+            color: rgba(0,0,0,0.5);
         }
 
         img {
             margin-bottom: -6px;
+            margin-top: -1px;
             width: 100%;
         }
     </style>
@@ -62,7 +86,5 @@
                 Anna Akhmatova<br />
                 Photo by Devon Janse van Rensburg on Unsplash
             </cite></p>
-        </div>
-
-        <img src="background.jpg" /></body>
+        </div><img src="background2.jpg" /></body>
 </html>
